@@ -10,25 +10,26 @@ setTimeout("document.bgColor = 'darkred'", 4000);
 */
 
 var e = document.getElementById("first-intro-typing-div");
-e.addEventListener("animationstart", listener, false);
-e.addEventListener("animationend", listener, false);
+e.addEventListener("animationend", function(){
+  setTimeout(addSecondAnimation,1200);
+  }, false);
 
-function listener(e){
-  switch(e.type) {
-    case "animationend":
-      
-      e.className = '';
-      setTimeout(addSecondAnimation,1000);
-      break;
-  
 
-  }
+var f = document.getElementById("second-intro-typing-div");
+f.addEventListener("animationend", function(){
+  setTimeout(finishSecondAnimation,1500);
+}, false);
+
+
+
+function finishSecondAnimation(){
+  f.classList.remove('typewriter');
 }
 
 function addSecondAnimation(){
   e.classList.remove('typewriter');
-  var secondDiv = document.getElementById("second-intro-typing-div");
-  secondDiv.className = "typewriter";
+ 
+  f.className = "typewriter";
   
   //secondDiv.style.animation = "typing 3.5s steps(29, end), blink-caret .5s step-end infinite";
   var secondText = document.getElementById("second-intro-typing-txt");
