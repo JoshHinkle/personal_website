@@ -1,44 +1,345 @@
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 	<title>Josh Hinkle</title>
 
 	<meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="_css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="_css/skeleton.css">	   
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="_css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="_css/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="_css/main.css">	
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">   
 </head>
-	<body>
-		<div id="content">
-		
-			<img src="_img/joshNY_resized.jpg" style="position:relative; width:100%;">
-			<h4>Hello. I'm Josh.</h4>
-			<h4">Computer Science | Graduating May 2018</h3>
-			<div id="divider"> </div>
-			<h5><a href="JoshHinkle_Resume.pdf" target="_blank">Download resume</a></h5>
-			<h5><a href="mailto:josh@joshhinkle.com" target="_top">josh@joshhinkle.com</a></h5>
-			<h5><a href="https://github.com/JoshHinkle" target="_blank">GitHub</h5>
-						
-			<a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
-		</div> <!-- end content-->
-	</body>	
-	
-	<!--Scripts-->
-	<script src="//use.typekit.net/phw8tri.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<body>
+	<!-- typewriter animation -->
+	<div class="splash">
+		<div class="splash-typing">
+			<div class="typewriter" id="first-intro-typing-div">
+				<h1 class="intro-typing-txt" >Hello, World.</h1> 
+			</div>
+			<div id="second-intro-typing-div">
+				<h1 id="second-intro-typing-txt" class="intro-typing-txt">'</h1> 
+			</div>
+		</div>
+	</div>
+	<!--
+	<section class="section">
+	<div class="container">
+				<div class="row">
+					<div class="twelve columns">
+						<h4>&#8744;</h4>
+					</div>
+				</div>
+	</div>
+	</section>
+-->
 
-	<!-- Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108801511-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+	<section  class="section">
+		<div class="container">
+			<div id="section-a" class="row">
+				<div class="twelve column">
 
-	  gtag('config', 'UA-108801511-1');
-	</script>
+					<h4>
+						Me. On a freezing cold day in Central Park. 
+						<br>
+						&#8623
+					</h4>	 	
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<!-- cover photo -->
+	<div id="ny-photo" class="parallax"></div>
+	<!--WELCOME-->
+	<section id="welcome" class="section" style="margin-bottom: 1rem;"">
+		<div class="container">
+			<div class="row">
+				<div class="twelve columns">
+					<h4 style="font-weight: 800">I'm Josh Hinkle. I live in San Francisco with a cat and my computer.</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve">
+					<a href="JoshHinkle_Resume.pdf" target="_blank">Resume</a> | 
+					<a href="mailto:josh@joshhinkle.com" target="_top">Email</a> | 
+					<a href="http://github.com/joshhinkle" target="_blank">Github</a> | 
+					<a href="http://linkedin.com/in/josh-hinkle" target="_blank">LinkedIn</a>
+					<p><br></p>
+				</div>
 
+			</div>
+		</div>
+	</section>
+	<!--buildings photo-->
+	<img class= "welcome-img" src="_img/city.png">
+
+	<!--RESUME -->
+	<section id="about-me" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="three columns"> 
+					<p class="category-text">ABOUT ME</p>	
+				</div>
+				<div class="nine columns">
+					<p class="paragraph-text">I am a Senior at SJSU studying chemical engineering and computer science. Currently a Software Engineering Intern at NASA Ames Research Center in Mountain View, CA., I am actively looking for a full-time software engineering position to start after I graduate in May 2018.</p>
+				</div>				
+			</div>
+
+		</div>
+	</section>
+	<section id="skills" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="three columns">
+					<p class="category-text">SKILLS</p>
+				</div>
+				<div class="nine columns">
+					<table style="width: 100%">
+						<tr >
+							<th>Languages</th>
+							<th>Tools</th>
+							<th>Professional</th>
+
+						</tr>
+						<tr>
+							<td>Java</td>
+							<td>Unix/Bash</td>
+							<td>Cross-discipline Collaboration</td>
+						</tr>
+						<tr>
+							<td>SQL</td>
+							<td>Git</td>
+							<td>Project Management</td>
+						</tr>
+						<tr>
+							<td>JavaScript</td>
+							<td>JSON</td>
+							<td>UI Design</td>
+						</tr>
+						<tr>
+							<td>HTML/CSS</td>
+							<td>AJAX</td>
+							<td>Prototyping</td>
+						</tr>
+						<tr>
+							<td>PHP</td>
+							<td>Linux</td>
+							<td>Process Design</td>
+						</tr>
+
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="experience" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="three columns"> 
+					<p class="category-text">EXPERIENCE</p>	
+				</div>
+				<div class="five columns">
+					<div class="paragraph-text">
+						<p class="experience-title">NASA AMES RESEARCH CENTER - AMA</p>
+						<p class="experience-subtitle">Software Engineering Intern</p>
+					</div>
+				</div>
+				<div class="four columns">
+					<div class="paragraph-text">
+						<p class="experience-date">January 2018-Present</p>
+						<p class="experience-date">Mountain View, CA.</p>
+					</div>
+				</div>				
+			</div>
+			<div class="row">
+				<div class="three columns">
+					<p></p>
+				</div>
+				<div class="nine columns">
+					<div class="paragraph-text">
+						<ul  class="experience-description">
+							<li>Consult with departments within Analytical Mechanics Associates at NASA to provide both local and online software solutions.</li>
+							<li>Use Java, VB, Microsoft SQL to code database application solutions to assist in the research of thermo-protective materials to be used in NASA reentry vehicles.</li>
+						</ul>
+						<br>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="three columns"> 
+					<p class="category-text"> </p>	
+				</div>
+				<div class="five columns">
+					<div class="paragraph-text">
+						<p class="experience-title">NASA AMES RESEARCH CENTER</p>
+						<p class="experience-subtitle">Software Engineering Intern</p>
+					</div>
+				</div>
+				<div class="four columns">
+					<div class="paragraph-text">
+						<p class="experience-date">January-September, 2017</p>
+						<p class="experience-date">Mountain View, CA.</p>
+					</div>
+				</div>				
+			</div>
+			<div class="row">
+				<div class="three columns">
+					<p></p>
+				</div>
+				<div class="nine columns">
+					<div class="paragraph-text">
+						<ul class="experience-description">
+							<li>Designed and developed relational database application for documenting the decomposition products of aerospace materials being tested under atmospheric reentry conditions.</li>
+							<li>Custom UI design built with JavaScript, CSS and HTML enabled NASA engineers with no DB training to customize their own queries, generating reports and data visualizations on demand.</li>
+							<li>Utilized this software in an investigation on decomposition products associated with aerospace materials being tested on-site.</li>
+							<li>Presented to NASA administrative staff software capabilities and results of the investigation.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section id="projects" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="three columns"> 
+					<p class="category-text">PROJECTS</p>	
+				</div>
+				<div class="nine columns paragraph-text">
+					<p class="experience-title">WOMENCOLLEGETECH.COM</p>
+					<ul class="experience-description">
+						<li>Collaboration with a NASA engineer coworker whom is involved with the Society of Women Engineers leadership.</li>
+						<li>Designed and developed social network website designed to aggregate engineering talent from all-women colleges in effort to enhance these college’s representation in Silicon Valley technology industry.</li>
+						<li>Built atop WordPress CMS and required custom PHP plug-ins to achieve separate client and talent pro le functionality.</li>
+					</ul>
+					<br>
+					<p class="experience-title">“THE GREAT CATSBY’S DECENT ADVENTURE”</p>
+					<ul class="experience-description">
+						<li>Arcade style video game programmed in Java using libGDX framework.</li>
+						<li>Features 100% original code, artwork, animations, and music.</li>
+
+					</ul>
+					<br>
+					<p class="experience-title">ROBOTICS COMPETITION</p>
+					<ul class="experience-description">
+						<li>Lead programmer on team for Robotic Systems engineering challenge.</li>
+						<li>All robot logic, AI, movement, and sensory analysis programmed in C.</li>
+						<li>
+							Team had the most successful robot in three of four categories.
+						</li>		
+					</ul>
+				</div>				
+			</div>
+		</div>
+	</section>
+	<section id="education" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="three columns"> 
+					<p class="category-text">EDUCATION</p>	
+				</div>
+				<div class="five columns">
+					<div class="paragraph-text">
+						<p class="experience-title">SAN JOSE STATE UNIVERSITY</p>
+						<p class="experience-subtitle">Computer Science and Chemical Engineering</p>
+					</div>
+				</div>
+				<div class="four columns">
+					<div class="paragraph-text">
+						<p class="experience-date">August 2018 - Present</p>
+						<p class="experience-date"></p>
+					</div>
+				</div>				
+			</div>
+			<div class="row">
+				<div class="three columns">
+					<p></p>
+				</div>
+				<div class="nine columns paragraph-text">
+					<ul class="experience-description">
+						<li>3.98 Overall GPA</li>
+						<li>4.00 CS GPA</li>
+					</ul>
+					<p class="experience-subtitle">Relevant CS Classes:</p>
+					<ul class="experience-description">
+						<li>Data Structures and Algorithms (A)</li>
+						<li>Object Oriented Design (A+)</li>
+						<li>Computer Programming in Java I and II (A x2)
+						</li>
+					</ul> 
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</section>
+<section id="awards" class="section">
+	<div class="container">
+		<div class="row">
+			<div class="three columns"> 
+				<p class="category-text">HONORS AND AWARDS</p>	
+			</div>
+			<div class="nine columns paragraph-text">
+				<p class="experience-title">2016-17 Outstanding Junior Award</p>
+				<ul class="experience-description" style="top: 15px">
+					<li>Awarded to top performing Junior in SJSU BCME department for academic year.</li>
+				</ul> 
+				<br>
+				<p class="experience-title">2015-16 Promise Award</p>
+				<ul class="experience-description" style="top: 15px">
+					<li>Awarded to top performing lower-classman (Sophmore or Freshman) in SJSU BCME department for academic year.</li>
+				</ul> 
+				<br>
+				<p class="experience-title">2017-2018 Dean's Scholar</p>
+				<ul class="experience-description" style="top: 15px">
+					<li>Awarded to SJSU Students with 2 consecutive semesters of a GPA >= 3.7</li>
+				</ul> 
+				<br>
+				<p class="experience-title">2015-16 Promise Award</p>
+				<ul class="experience-description" style="top: 15px">
+					<li>Awarded to SJSU Students with 2 consecutive semesters of a GPA == 4.00 </li>
+				</ul> 
+
+			</div>				
+		</div>			
+	</div>
+</div>
+</section>
+<section id="leadership" class="section">
+	<div class="container">
+		<div class="row">
+			<div class="three columns"> 
+				<p class="category-text">LEADERSHIP</p>	
+			</div>
+			<div class="nine columns paragraph-text">
+				<p class="experience-title">RECYCLING WATER ON MARS (SENIOR PROJECT)</p>
+				<ul class="experience-description">
+					<li>Leader of 6 person team researching and designing new process for water reuse for manned Martian mission.</li>
+					<li>Collaboration with Michael Flynn and NASA Ames Research Center</li>
+					<li>Leadership duties include scheduling meetings and interfacing with client, securing funding, and delegating tasks amongst team members.</li>
+				</ul>
+				<br>
+				<br>
+			</div>				
+		</div>			
+	</div>
+</div>
+</section>
+</body>
+
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="_js/javascript.js" language="javascript"></script>
+<!-- Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108801511-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-108801511-1');
+</script>
 </html>
