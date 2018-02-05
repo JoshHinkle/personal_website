@@ -1,4 +1,7 @@
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 .section {
   padding: 8rem 0 0rem;
   text-align: center;
@@ -197,3 +200,12 @@ a:hover{
 
 
 
+@media(max-width: 800px){
+  #ny-text{
+    display: none;
+
+  }
+  #ny-photo{
+    display: none;
+  }
+}
