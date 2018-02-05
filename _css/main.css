@@ -1,78 +1,199 @@
-* {
-	margin:0px;
-	padding:0px;
+
+.section {
+  padding: 8rem 0 0rem;
+  text-align: center;
+  /*border: 2px solid green;*/
 }
 
-body {
-	background: #F9F9F9;
+
+#section-a{
+  padding: 1rem 0 9rem;
+  height: 2vh;
+/*  border: 1px solid black;*/
 }
 
-#content{
-	width: 900px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top:50px;
+.column, .columns, .container {
+ /*border: 1px solid black;*/
 }
 
-#content h4{
-	/*background: #000;*/
-	display: block;
+h1, h2, h3, h4, h5, h6{
+  font-weight: 800;
+  color: #b22929
+  
+}
+
+.splash{
+  height: 100vh;
+  display: table;
+  padding: 1rem;
+  /*border: 1px solid black;*/
+  
+}
+@media (min-width: 400px){
+  .splash{
+    padding: 7rem;
+  }
+}
+.splash-typing{
+  display: table-cell;
+  vertical-align: middle;  
+}
+
+
+.welcome-img {
 	position: relative;
-	top: -185px;
-	left: 80;
-	width:40%;
-	font-family: "Tisa Pro", georgia, serif;
-	color: #ffffff;
-	font-size: 36px;
-	font-weight: normal;
-	line-height: 1.6em;
+	max-width: 100%;
+	size: 10%
+  padding: 0 0 15rem;
 }
 
-#content h5{
+.category-text{
+  font-size: 1.2em;
+  text-align: left;
+  font-weight: 800;
+  color: #b22929
 
-	display: block;
-	position: relative;
-	padding-top:8px;
-	left: 80;
-	width:150px;
-	font-family: "Proxima Nova", helvetica;
-	color: #ffffff;
-	font-size: 13px;
-	font-weight: normal;
-	line-height: 1.6em;
-	letter-spacing: .01em;
+}
+@media(min-width: 550px){
+  .category-text{
+    font-size: 1em;
+    text-align: right;
+
+  }
+}
+@media(min-width: 650px){
+  .category-text{
+    font-size: 1.2em;
+  }
 }
 
-#divider{
-	background: #ffffff;
-	display: block;
-	position: relative;
-	padding-top: 1px;
-	top: -185px;
-	left: 80;
-	width:3%;
+.paragraph-text{
+  text-align: left;
 }
 
-
-a:link {
-    color: #ffffff;
-	text-decoration: none;
+.paragraph-text p{
+  margin: 0;
 }
 
 
-a:visited {
-    color: #ffffff;
-	text-decoration: none;
+
+
+body{
+	font-family: 'Libre Franklin', sans-serif;
 }
 
 
-a:hover {
-    color: #ffffff;
-	text-decoration: none;
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation-duration: 4.5s;
+  animation: 
+    typing 1.5s steps(29, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #b22929 }
+}
+
+.intro-typing-txt {
+  /*font-family: monospace;*/
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  letter-spacing: .15em; /* Adjust as needed */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+}
+
+#second-intro-typing-txt{
+	text-indent: -9999px;
 }
 
 
-a:active {
-    color: #ffffff;
-	text-decoration: none;
+.welcome{
+  position: relative;
 }
+
+#ny-photo{
+  background-image: url(../_img/joshNY_resized.jpg);
+}
+
+.parallax {
+
+    /* Full height */
+     height: 100vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 .1em #111;
+}
+
+.experience-title{
+  font-weight: 800;
+}
+.experience-subtitle{
+  color: grey;
+  font-weight: 800;
+}
+.experience-date{
+  text-align: left;
+  color: grey;
+  font-style: italic;
+}
+@media (min-width: 600px) {
+  .experience-date{
+    text-align: right;
+  }
+
+  
+}
+.experience-description{
+  font-size: .9em;
+}
+
+@media (min-width: 550px){
+  .experience-description{
+    padding-top: 1rem;
+  }  
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+li {
+  padding-left: 1.4em;
+  text-indent: -1.4em;
+}
+
+li:before {
+  content: ">>";
+  padding-right: 5px;
+}
+
+a, .center-link{
+  text-align: center;
+  color:  #b22929;
+  text-decoration: none;
+
+}
+a:hover{
+  color: grey;
+}
+
+
+
