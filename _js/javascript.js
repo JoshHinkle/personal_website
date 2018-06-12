@@ -17,13 +17,17 @@ e.addEventListener("animationend", function(){
 
 var f = document.getElementById("second-intro-typing-div");
 f.addEventListener("animationend", function(){
-  setTimeout(finishSecondAnimation,1500);
+  setTimeout(finishSecondAnimation,5000);
 }, false);
+
+
 
 
 
 function finishSecondAnimation(){
   f.classList.remove('typewriter');
+  unfade(document.getElementById('arrowVertDiv'))
+ 
 }
 
 function addSecondAnimation(){
@@ -37,6 +41,20 @@ function addSecondAnimation(){
   secondText.style.textIndent = '0px'
   secondText.innerHTML = "My name is Josh.";
 
+
+}
+
+function unfade(element) {
+    var op = 0.02;  // initial opacity
+    element.style.display = 'block';
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1;
+    }, 10);
 }
 
 window.sr = ScrollReveal();
@@ -46,3 +64,5 @@ window.sr = ScrollReveal();
     sr.reveal('.experience-subtitle');
     sr.reveal('.experience-description');
     sr.reveal('.experience-title');
+
+
