@@ -17,7 +17,7 @@ e.addEventListener("animationend", function(){
 
 var f = document.getElementById("second-intro-typing-div");
 f.addEventListener("animationend", function(){
-  setTimeout(finishSecondAnimation,5000);
+  setTimeout(finishSecondAnimation,2500);
 }, false);
 
 
