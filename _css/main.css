@@ -28,6 +28,12 @@ h1, h2, h3, h4, h5, h6{
   
 }
 
+h4 a {
+  color: #b22929;
+  border-bottom: 1px solid currentColor;
+  /* text-decoration: underline 1px; */
+}
+
 .splash{
   height: 75vh;
   display: table;
@@ -49,7 +55,7 @@ h1, h2, h3, h4, h5, h6{
 .welcome-img {
 	position: relative;
 	max-width: 100%;
-	size: 10%
+	size: 10%;
   padding: 0 0 15rem;
 }
 
