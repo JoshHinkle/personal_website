@@ -6,13 +6,31 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Josh Hinkle - Engineering Manager at SoFi. Leading fraud detection and ML platform teams. Background in distributed systems, chemical engineering, and computer science." />
+	<meta property="og:title" content="Josh Hinkle" />
+	<meta property="og:description" content="Engineering Manager at SoFi leading fraud detection and ML platform teams." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://joshhinkle.com" />
 	<link rel="stylesheet" type="text/css" href="_css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="_css/skeleton.css">
 	<link rel="stylesheet" type="text/css" href="_css/main.css">	
 	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
 </head>
 <body>
-	
+	<nav id="main-nav">
+		<div class="nav-container">
+			<a href="#welcome" class="nav-name">Josh Hinkle</a>
+			<div class="nav-links">
+				<a href="#about-me">About</a>
+				<a href="#skills">Skills</a>
+				<a href="#experience">Experience</a>
+				<a href="#education">Education</a>
+				<a href="#awards">Awards</a>
+				<a href="#goodbye">Contact</a>
+			</div>
+		</div>
+	</nav>
+
 	<!-- typewriter animation -->
 	<div class="splash">
 		<div class="splash-typing">
@@ -35,7 +53,7 @@
 			<div id="section-a" class="row">
 				<div class="twelve column">
 					<h4>
-						Me. On a freezing cold day in Central Park. 
+						Me, hiking the Tour du Mont Blanc in 2024. 
 						<br>
 					</h4>	 	
 				</div>
@@ -50,15 +68,15 @@
 		<div class="container">
 			<div class="row">
 				<div class="twelve columns">
-					<h4 style="font-weight: 800">I'm Josh Hinkle. I live in San Francisco with my <a href="_assets/daisy.jpg" target="_blank">dog Daisy</a> and my computer.</h4>
+					<h4 style="font-weight: 800">I'm Josh Hinkle. I live in Seattle with my <a href="javascript:void(0)" onclick="document.getElementById('daisy-lightbox').classList.add('active')">dog Daisy</a> and my computer.</h4>
 				</div>
 			</div>
 			<div class="row">
 				<div class="twelve">
-					<a href="_assets/JoshHinkle_Resume.pdf" target="_blank">Resume</a> | 
+					<a href="_assets/JoshHinkle_Resume.pdf" target="_blank" rel="noopener">Resume</a> | 
 					<a href="mailto:josh@joshhinkle.com" target="_top">Email</a> | 
-					<a href="http://github.com/joshhinkle" target="_blank">Github</a> | 
-					<a href="http://linkedin.com/in/josh-hinkle" target="_blank">LinkedIn </a>
+					<a href="http://github.com/joshhinkle" target="_blank" rel="noopener">Github</a> | 
+					<a href="http://linkedin.com/in/josh-hinkle" target="_blank" rel="noopener">LinkedIn </a>
 					<p><br></p>
 				</div>
 
@@ -75,13 +93,14 @@
 					<p class="category-text">ABOUT ME</p>	
 				</div>
 				<div class="nine columns">
-					<p class="paragraph-text"> &#x1F44B; I'm a Bay Area software engineer, 
-						with an academic background in chemical engineering and computer science. 
-						My interests include all-things programming, math, science, rockets and 
-						heat shields, chess, and Zelda. 
-						Currently a software engineer @ <a href="https://www.sofi.com/" target="_blank">SoFi</a>. 
-						Before that I was at NASA Ames Research Center, building software applications 
-						to assist in the research and testing of thermoprotective materials for spacecraft reentry. 
+					<p class="paragraph-text"> &#x1F44B; I'm an engineering manager with a background in
+						chemical engineering and computer science. I lead teams shipping real-time fraud
+						detection ML models at <a href="https://www.sofi.com/" target="_blank" rel="noopener">SoFi</a>,
+						where I've spent 7 years spanning hypergrowth from a 400-person pre-IPO startup
+						to the fastest-growing bank in US history. Before SoFi, I was at NASA Ames Research Center,
+						building software to assist in the research and testing of thermoprotective materials
+						for spacecraft reentry. My interests include all-things programming, math, science,
+						rockets and heat shields, chess, and Zelda.
 					</p>
 				</div>				
 			</div>
@@ -91,42 +110,32 @@
 		<div class="container">
 			<div class="row">
 				<div class="three columns">
-					<p class="category-text">SKILLS</p>
+					<p class="category-text">LEADERSHIP FOCUS</p>
 				</div>
 				<div class="nine columns">
-					<table style="width: 100%">
-						<tr >
-							<th>Languages</th>
-							<th>Tools</th>
-							<th>Professional</th>
-
-						</tr>
-						<tr>
-							<td>Java</td>
-							<td>Spring</td>
-							<td>Team Leadership</td>
-						</tr>
-						<tr>
-							<td>Kotlin</td>
-							<td>AWS</td>
-							<td>Mentorship</td>
-						</tr>
-						<tr>
-							<td>Python</td>
-							<td>Terraform</td>
-							<td>Cross-Team Collaboration</td>
-						</tr>
-						<tr>
-							<td>SQL</td>
-							<td>Kubernetes</td>
-							<td>Prototyping</td>
-						</tr>
-						<tr>
-							<td>JS</td>
-							<td>Temporal</td>
-							<td>Documentation</td>
-						</tr>
-					</table>
+					<div class="paragraph-text skills-grid">
+						<span class="skill-tag">Team Building & Development</span>
+						<span class="skill-tag">Cross-Functional Coordination</span>
+						<span class="skill-tag">Technical Program Management</span>
+						<span class="skill-tag">ML Model Governance & Safety</span>
+						<span class="skill-tag">Performance Management</span>
+						<span class="skill-tag">Regulatory Compliance</span>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin-top: 3rem;">
+				<div class="three columns">
+					<p class="category-text">TECHNICAL BACKGROUND</p>
+				</div>
+				<div class="nine columns">
+					<div class="paragraph-text">
+						<p class="experience-title">ML Systems & Production AI</p>
+						<p class="tech-description">Real-time ML feature pipelines, model deployment & governance, staged rollouts, A/B testing, low-latency ML inference</p>
+						<p class="experience-title" style="margin-top: 1.5rem;">Distributed Systems & Infrastructure</p>
+						<p class="tech-description">AWS, Kubernetes, Kafka/Kinesis, Snowflake, Apache Iceberg, Trino, Druid, Spring Boot</p>
+						<p class="experience-title" style="margin-top: 1.5rem;">Languages</p>
+						<p class="tech-description">Kotlin, Java, Python, SQL, JavaScript</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -140,48 +149,18 @@
 				<div class="five columns">
 					<div class="paragraph-text">
 						<p class="experience-title">SoFi</p>
-						<p class="experience-subtitle">Senior Software Engineer</p>
+						<p class="experience-subtitle">Senior Software Engineering Manager</p>
+						<p class="experience-subtitle">Software Engineering Manager</p>
 					</div>
 				</div>
 				<div class="four columns">
 					<div class="paragraph-text">
 						<p class="experience-date">March 2019 - Present</p>
-						<p class="experience-date">San Francisco, CA</p>
+						<p class="experience-date">September 2025 - Present</p>
+						<p class="experience-date">January 2025 - August 2025</p>
 					</div>
 				</div>
 			</div>
-      <div class="row">
-				<div class="three columns">
-					<p></p>
-				</div>
-				<div class="nine columns">
-					<div class="paragraph-text">
-						<ul class="experience-description">
-							<li>Team lead and senior backend engineer on the SoFi Money team</li>
-							<li>Lead engineer for large user-facing projects such as Samsung Money by SoFi and Personal Loan - Money Bundle.</li>
-							<li>Designed and implemented org-wide data pipeline core infrastructure utilzing AWS Kinesis, S3, Snowflake, and others. </li>
-							<li>Designed and built the entire resilient Webhooks API with which SoFi communicates with Samsung, currently having sent > 30M messages with 0 dropped.</li>
-							<li>Check out my feature in a <a href="https://builtin.com/fintech/behind-scenes-three-sofi-fintech-products">blog post.</a></li>
-						</ul>
-						<br>
-					</div>
-				</div>
-			</div>
-      <div class="row">
-        <div class="three columns">
-					<p></p>
-				</div>
-        <div class="five columns">
-          <div class="paragraph-text">
-            <p class="experience-subtitle">Software Engineer</p>
-          </div>
-        </div>
-        <div class="four columns">
-          <div class="paragraph-text">
-            <p class="experience-date">March 2019 - September 2020</p>
-          </div>
-        </div>
-      </div>
 			<div class="row">
 				<div class="three columns">
 					<p></p>
@@ -189,9 +168,49 @@
 				<div class="nine columns">
 					<div class="paragraph-text">
 						<ul class="experience-description">
-							<li>Joined SoFi Time To Fund Team, with primary task to increase end-to-end automation of loan approval and funding processes. </li>
-							<li>Worked in diverse tech stack primarily consisting of Java and Kotlin backend micro-services</li>
-							<li>Regular interaction with legacy apps using scala, jquery, and other randoms.</li>
+							<li>Lead two teams at SoFi: Fraud Signals (10 SWE) and FROST Data Engineering (3 DE), protecting SoFi Members from bad actors by balancing fraud prevention effectiveness with user experience.</li>
+							<li>Established ML model governance including staged rollouts, false positive monitoring, and safety review processes for model changes&mdash;practices aligned with responsible AI development and AI safety principles.</li>
+							<li>Extensive cross-functional coordination between Fraud, Crypto, Banking, and Member verticals. Launched several new products safely, including SoFi Crypto, SmartCard, SoFi Pay and Instant ACH, while continuing to be the first line of defense for Banking, Credit Card, and Invest product lines.</li>
+							<li>Development of real-time ML platform enabling fraud detection across Money, Credit, and Invest products with &lt;100ms latency requirements. Platform provides config-driven feature engineering for fraud models, allowing data science teams to rapidly iterate on ML signals while maintaining safety reviews and staged rollouts.</li>
+							<li>Built and scaled Signals team from 6 to 10 engineers over 4 months during charter expansion. Delivered performance feedback and coaching, sponsored several successful promotions, and conducted 50+ technical interviews.</li>
+						</ul>
+						<br>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="three columns">
+					<p></p>
+				</div>
+				<div class="five columns">
+					<div class="paragraph-text">
+						<p class="experience-subtitle">Senior Staff Software Engineer</p>
+						<p class="experience-subtitle">Staff Software Engineer</p>
+						<p class="experience-subtitle">Senior Software Engineer</p>
+						<p class="experience-subtitle">Software Engineer</p>
+					</div>
+				</div>
+				<div class="four columns">
+					<div class="paragraph-text">
+						<p class="experience-date">September 2024 - January 2025</p>
+						<p class="experience-date">September 2022 - August 2024</p>
+						<p class="experience-date">September 2020 - August 2022</p>
+						<p class="experience-date">March 2019 - August 2020</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="three columns">
+					<p></p>
+				</div>
+				<div class="nine columns">
+					<div class="paragraph-text">
+						<ul class="experience-description">
+							<li>Core contributor and tech lead for the 2nd generation Financial Services platform. Architected and led development of second-generation Onboarding platform, implementing a concurrent and resilient framework supporting company-wide Member onboarding experiences.</li>
+							<li>Authored "FRN" (Financial Resource Name) specification, a URN-like identifier standard adopted globally across SoFi's 100+ microservices for resource identification and authorization.</li>
+							<li>Designed and implemented org-wide data pipeline core infrastructure, utilizing AWS Kinesis, S3, and Snowflake.</li>
+							<li>Team lead on large user-facing projects such as Samsung Money by SoFi and Personal Loan - Money Bundle. Featured in a <a href="https://builtin.com/fintech/behind-scenes-three-sofi-fintech-products">blog post by builtin.com.</a></li>
+							<li>Designed and built resilient Webhooks API with which SoFi communicates with Samsung, currently having sent 100M+ messages with 0 dropped.</li>
 						</ul>
 						<br>
 					</div>
@@ -234,44 +253,13 @@
 				</div>
 				<div class="five columns">
 					<div class="paragraph-text">
-						<p class="experience-title">NASA AMES RESEARCH CENTER - AMA</p>
-						<p class="experience-subtitle">Software Engineering Intern</p>
-					</div>
-				</div>
-				<div class="four columns">
-					<div class="paragraph-text">
-						<p class="experience-date">January 2018-May 2018</p>
-						<p class="experience-date">Mountain View, CA</p>
-					</div>
-				</div>				
-			</div>
-			<div class="row">
-				<div class="three columns">
-					<p></p>
-				</div>
-				<div class="nine columns">
-					<div class="paragraph-text">
-						<ul  class="experience-description">
-							<li>Consult with departments within Analytical Mechanics Associates at NASA to provide both local and online software solutions.</li>
-							<li>Use Java, VB, Microsoft SQL to code CRUD application solutions to assist in the research of thermo-protective materials to be used in NASA reentry vehicles.</li>
-						</ul>
-						<br>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="three columns"> 
-					<p class="category-text"> </p>	
-				</div>
-				<div class="five columns">
-					<div class="paragraph-text">
 						<p class="experience-title">NASA AMES RESEARCH CENTER</p>
-						<p class="experience-subtitle">Software Engineering Intern</p>
+						<p class="experience-subtitle">Software Engineering Intern - AMA</p>
 					</div>
 				</div>
 				<div class="four columns">
 					<div class="paragraph-text">
-						<p class="experience-date">January-September, 2017</p>
+						<p class="experience-date">January 2017 - May 2018</p>
 						<p class="experience-date">Mountain View, CA</p>
 					</div>
 				</div>				
@@ -283,48 +271,15 @@
 				<div class="nine columns">
 					<div class="paragraph-text">
 						<ul class="experience-description">
+							<li>Consult with departments within Analytical Mechanics Associates at NASA to provide both local and online software solutions.</li>
+							<li>Use Java, VB, Microsoft SQL to code CRUD application solutions to assist in the research of thermo-protective materials to be used in NASA reentry vehicles.</li>
 							<li>Designed and developed relational database application for documenting the decomposition products of aerospace materials being tested under atmospheric reentry conditions.</li>
 							<li>Custom UI design built with JavaScript, CSS and HTML enabled NASA engineers with no DB training to customize their own queries, generating reports and data visualizations on demand.</li>
-							<li>Utilized this software in an investigation on decomposition products associated with aerospace materials being tested on-site.</li>
 							<li>Presented to NASA administrative staff software capabilities and results of the investigation.</li>
-							<li>Check out a PDF of mx`x y poster presentation <a href="_assets/JoshHinkle_NASA_Poster.pdf">HERE.</a></li>
+							<li>Check out a PDF of my poster presentation <a href="_assets/JoshHinkle_NASA_Poster.pdf">HERE.</a></li>
 						</ul>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-	<section id="projects" class="section">
-		<div class="container">
-			<div class="row">
-				<div class="three columns"> 
-					<p class="category-text">PROJECTS</p>	
-				</div>
-				<div class="nine columns paragraph-text">
-					<p class="experience-title">WOMENCOLLEGETECH.COM</p>
-					<ul class="experience-description">
-						<li>Collaboration with NASA engineer coworker whom is involved with the Society of Women Engineers leadership.</li>
-						<li>Designed and developed social network website designed to aggregate engineering talent from all-women colleges in effort to enhance these college’s representation in Silicon Valley technology industry.</li>
-						<li>Built atop WordPress CMS and required custom PHP plug-ins to achieve separate client and talent profile functionality.</li>
-					</ul>
-					<br>
-					<p class="experience-title">“THE GREAT CATSBY’S DECENT ADVENTURE”</p>
-					<ul class="experience-description">
-						<li>Arcade style video game programmed in Java using libGDX framework.</li>
-						<li>Features 100% original code, artwork, animations, and music.</li>
-						<li>Watch my presentation <a href="https://www.youtube.com/watch?v=UuPmeWUO_5A" target="_blank">HERE</a> and view the source code <a href="https://github.com/JoshHinkle/GreatCatsby" target="_blank">HERE.</a></li>
-
-					</ul>
-					<br>
-					<p class="experience-title">ROBOTICS COMPETITION</p>
-					<ul class="experience-description">
-						<li>Lead programmer on team for Robotic Systems engineering challenge.</li>
-						<li>All robot logic, AI, movement, and sensory analysis programmed in C.</li>
-						<li>
-							Team had the most successful robot in three of four categories.
-						</li>		
-					</ul>
-				</div>				
 			</div>
 		</div>
 	</section>
@@ -372,7 +327,7 @@
 				<div class="nine columns paragraph-text">
 					<p class="experience-title">NASA ASAP Award</p>
 					<ul class="experience-description" style="top: 15px">
-						<li>Checkout my award letter <a href="https://www.instagram.com/p/BfHTYQhjHU4/?taken-by=joshcandoit4" target="_blank">HERE</a></li>
+						<li>Checkout my award letter <a href="https://www.instagram.com/p/BfHTYQhjHU4/?taken-by=joshcandoit4" target="_blank" rel="noopener">HERE</a></li>
 					</ul> 
 					<p class="experience-title">NorCal AICHE Senior of the Year</p>
 					<ul class="experience-description" style="top: 15px">
@@ -414,7 +369,7 @@
 						<li>Leader of 6 person team performing trade study on new process for water reuse on manned Martian mission.</li>
 						<li>Collaboration with Michael Flynn and NASA Ames Research Center</li>
 						<li>Leadership duties include scheduling meetings and interfacing with client, securing funding, and delegating tasks amongst team members.</li>
-						<li>Checkout a PDF of the poster presentation <a href="_assets/senior_project_presentation.pdf" target="_blank">HERE.</a></li>
+						<li>Checkout a PDF of the poster presentation <a href="_assets/senior_project_presentation.pdf" target="_blank" rel="noopener">HERE.</a></li>
 					</ul>
 					<br>
 					<br>
@@ -431,26 +386,46 @@
 			</div>
 			<div class="row">
 				<div class="twelve">
-					<a href="_assets/JoshHinkle_Resume.pdf" target="_blank">Resume</a> | 
+					<a href="_assets/JoshHinkle_Resume.pdf" target="_blank" rel="noopener">Resume</a> | 
 					<a href="mailto:josh@joshhinkle.com" target="_top">Email</a> | 
-					<a href="http://github.com/joshhinkle" target="_blank">Github</a> | 
-					<a href="http://linkedin.com/in/josh-hinkle" target="_blank">LinkedIn</a>
+					<a href="http://github.com/joshhinkle" target="_blank" rel="noopener">Github</a> | 
+					<a href="http://linkedin.com/in/josh-hinkle" target="_blank" rel="noopener">LinkedIn</a>
 					<p><br></p>
 				</div>
 
 			</div>
 		</div>
 	</section>
+	<div id="daisy-lightbox" class="lightbox" onclick="this.classList.remove('active')">
+		<img src="_assets/daisy.jpg" alt="Daisy the dog">
+	</div>
 	<!--SCRIPTS --> 
-	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js" language="javascript"></script>
+	<script src="_js/scrollreveal.min.js" language="javascript"></script>
 	<script src="_js/javascript.js" language="javascript"></script>
-	<!-- Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108801511-1"></script>
 	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-108801511-1');
+		// Sticky nav
+		(function() {
+			var nav = document.getElementById('main-nav');
+			var splashHeight = document.querySelector('.splash').offsetHeight;
+			window.addEventListener('scroll', function() {
+				if (window.scrollY > splashHeight) {
+					nav.classList.add('visible');
+				} else {
+					nav.classList.remove('visible');
+				}
+			});
+			// Smooth scroll for nav links
+			var links = nav.querySelectorAll('a[href^="#"]');
+			for (var i = 0; i < links.length; i++) {
+				links[i].addEventListener('click', function(e) {
+					e.preventDefault();
+					var target = document.querySelector(this.getAttribute('href'));
+					if (target) {
+						target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+					}
+				});
+			}
+		})();
 	</script>
 
 </body>
