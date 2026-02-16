@@ -65,7 +65,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="twelve columns">
-					<h4 style="font-weight: 800">I'm Josh Hinkle, an engineering leader at <a href="https://www.sofi.com/" target="_blank" rel="noopener">SoFi</a>. Say hi to my <a href="javascript:void(0)" onclick="document.getElementById('daisy-lightbox').classList.add('active')">dog Daisy</a>.</h4>
+					<h4 style="font-weight: 800">I'm Josh Hinkle, an engineering leader at <a href="https://www.sofi.com/" target="_blank" rel="noopener">SoFi</a>. Say hi to my <a href="#" id="daisy-link">dog Daisy</a>.</h4>
 				</div>
 			</div>
 			<div class="row">
@@ -85,9 +85,9 @@
 	<!--RESUME -->
 	<section id="about-me" class="section">
 		<div class="container">
-			<div class="row">
-				<div class="three columns"> 
-					<p class="category-text">ABOUT ME</p>	
+			<div class="row" data-reveal>
+				<div class="three columns">
+					<p class="category-text">ABOUT ME</p>
 				</div>
 				<div class="nine columns">
 					<p class="paragraph-text"> &#x1F44B; I'm an engineering manager with a background in
@@ -105,7 +105,7 @@
 	</section>
 	<section id="skills" class="section">
 		<div class="container">
-			<div class="row">
+			<div class="row" data-reveal>
 				<div class="three columns">
 					<p class="category-text">LEADERSHIP FOCUS</p>
 				</div>
@@ -120,7 +120,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row" style="margin-top: 3rem;">
+			<div class="row" data-reveal style="margin-top: 3rem;">
 				<div class="three columns">
 					<p class="category-text">TECHNICAL BACKGROUND</p>
 				</div>
@@ -139,7 +139,7 @@
 	</section>
 	<section id="experience" class="section">
 		<div class="container">
-			<div class="row">
+			<div class="row" data-reveal>
 				<div class="three columns">
 					<p class="category-text">EXPERIENCE</p>
 				</div>
@@ -161,7 +161,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" data-reveal>
 				<div class="three columns"><p></p></div>
 				<div class="nine columns">
 					<div class="paragraph-text">
@@ -176,7 +176,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" data-reveal>
 				<div class="three columns"><p></p></div>
 				<div class="nine columns">
 					<div class="experience-role">
@@ -197,7 +197,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" data-reveal>
 				<div class="three columns"><p></p></div>
 				<div class="nine columns">
 					<div class="paragraph-text">
@@ -212,7 +212,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" data-reveal>
 				<div class="three columns"><p></p></div>
 				<div class="nine columns">
 					<p class="experience-company">OTC Exchange Network</p>
@@ -236,7 +236,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" data-reveal>
 				<div class="three columns"><p></p></div>
 				<div class="nine columns">
 					<p class="experience-company">NASA Ames Research Center</p>
@@ -267,9 +267,9 @@
 	</section>
 	<section id="education" class="section">
 		<div class="container">
-			<div class="row">
-				<div class="three columns"> 
-					<p class="category-text">EDUCATION</p>	
+			<div class="row" data-reveal>
+				<div class="three columns">
+					<p class="category-text">EDUCATION</p>
 				</div>
 				<div class="five columns">
 					<div class="paragraph-text">
@@ -302,9 +302,9 @@
 	</section>
 	<section id="awards" class="section">
 		<div class="container">
-			<div class="row">
-				<div class="three columns"> 
-					<p class="category-text">HONORS AND AWARDS</p>	
+			<div class="row" data-reveal>
+				<div class="three columns">
+					<p class="category-text">HONORS AND AWARDS</p>
 				</div>
 				<div class="nine columns paragraph-text">
 					<p class="experience-title">NASA ASAP Award</p>
@@ -341,9 +341,9 @@
 	</section>
 	<section id="leadership" class="section">
 		<div class="container">
-			<div class="row">
-				<div class="three columns"> 
-					<p class="category-text">LEADERSHIP</p>	
+			<div class="row" data-reveal>
+				<div class="three columns">
+					<p class="category-text">LEADERSHIP</p>
 				</div>
 				<div class="nine columns paragraph-text">
 					<p class="experience-title">RECYCLING WATER ON MARS</p>
@@ -378,51 +378,11 @@
 			</div>
 		</div>
 	</section>
-	<div id="daisy-lightbox" class="lightbox" onclick="this.classList.remove('active')">
+	<div id="daisy-lightbox" class="lightbox">
 		<img src="_assets/daisy.jpg" alt="Daisy the dog">
 	</div>
-	<!--SCRIPTS --> 
-	<script src="_js/scrollreveal.min.js" language="javascript"></script>
-	<script src="_js/javascript.js?v=2" language="javascript"></script>
-	<script>
-		// Sticky nav + arrow hide
-		(function() {
-			var nav = document.getElementById('main-nav');
-			var arrow = document.getElementById('arrowVertDiv');
-			var arrowHidden = false;
-			var splashHeight = document.querySelector('.splash').offsetHeight;
-			window.addEventListener('scroll', function() {
-				if (window.scrollY > splashHeight) {
-					nav.classList.add('visible');
-				} else {
-					nav.classList.remove('visible');
-				}
-				if (arrow) {
-					var arrowBottom = arrow.offsetTop + arrow.offsetHeight;
-					if (window.scrollY > arrowBottom && !arrowHidden) {
-						arrowHidden = true;
-						arrow.style.transition = 'opacity 0.5s ease';
-						arrow.style.opacity = '0';
-					} else if (window.scrollY === 0 && arrowHidden) {
-						arrowHidden = false;
-						arrow.style.transition = 'opacity 0.5s ease';
-						arrow.style.opacity = '1';
-					}
-				}
-			});
-			// Smooth scroll for nav links
-			var links = nav.querySelectorAll('a[href^="#"]');
-			for (var i = 0; i < links.length; i++) {
-				links[i].addEventListener('click', function(e) {
-					e.preventDefault();
-					var target = document.querySelector(this.getAttribute('href'));
-					if (target) {
-						target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-					}
-				});
-			}
-		})();
-	</script>
+	<!--SCRIPTS -->
+	<script src="_js/javascript.js?v=3"></script>
 
 </body>
 </html>
