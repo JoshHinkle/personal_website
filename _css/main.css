@@ -1,12 +1,32 @@
+/* ============================================
+   Editorial Design — Josh Hinkle
+   Cormorant Garamond (headings) + DM Sans (body)
+   ============================================ */
+
+/* --- Base --- */
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  background: #faf8f5;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Navigation --- */
 #main-nav {
   position: fixed;
   top: -60px;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.97);
+  background: rgba(250, 248, 245, 0.97);
   z-index: 999;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
   transition: top 0.3s ease;
+  backdrop-filter: blur(8px);
 }
 
 #main-nav.visible {
@@ -23,20 +43,25 @@
 }
 
 .nav-name {
-  font-weight: 800;
-  font-size: 1.1em;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
   color: #b22929;
   text-decoration: none;
   border: none;
+  letter-spacing: 0.02em;
 }
 
 .nav-links a {
-  color: #333;
+  color: #444;
   text-decoration: none;
-  font-size: 0.85em;
+  font-size: 0.8em;
   font-weight: 600;
   margin-left: 1.5rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   border: none;
+  transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
@@ -46,218 +71,256 @@
 @media (max-width: 600px) {
   .nav-links a {
     margin-left: 0.8rem;
-    font-size: 0.75em;
+    font-size: 0.7em;
   }
   .nav-name {
     display: none;
   }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+/* --- Sections --- */
 .section {
-  padding: 8rem 0 .5rem;
+  padding: 6rem 0 1rem;
   text-align: center;
-  
 }
 
-
-
-#section-a{
+#section-a {
   padding: 1rem 0 2rem;
   height: 2vh;
-/*  border: 1px solid black;*/
-}
-.container { 
 }
 
-.column, .columns {
- 
+.container { }
+.column, .columns { }
+
+/* --- Typography --- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+  color: #b22929;
 }
 
-h1, h2, h3, h4, h5, h6{
-  font-weight: 800;
-  color: #b22929
-  
+h1 {
+  font-size: 2.8em;
+  letter-spacing: -0.01em;
 }
 
 h4 a {
   color: #b22929;
-  border-bottom: 1px solid currentColor;
-  /* text-decoration: underline 1px; */
+  border-bottom: 1px solid rgba(178, 41, 41, 0.3);
+  transition: border-color 0.2s ease;
 }
 
-.splash{
+h4 a:hover {
+  border-color: rgba(178, 41, 41, 0.8);
+}
+
+/* --- Splash / Typewriter --- */
+.splash {
   height: 75vh;
   display: table;
   padding: 1rem;
-  /*border: 1px solid black;*/
-  
 }
-@media (min-width: 400px){
-  .splash{
+
+@media (min-width: 400px) {
+  .splash {
     padding: 7rem;
   }
 }
-.splash-typing{
+
+.splash-typing {
   display: table-cell;
-  vertical-align: middle;  
+  vertical-align: middle;
 }
 
-
 .welcome-img {
-	position: relative;
-	max-width: 100%;
-	size: 10%;
+  position: relative;
+  max-width: 100%;
+  size: 10%;
   padding: 0 0 15rem;
 }
 
-.category-text{
-  font-size: 1.2em;
-  text-align: left;
-  font-weight: 800;
-  color: #b22929
-
-}
-@media(min-width: 550px){
-  .category-text{
-    font-size: 1em;
-    text-align: right;
-
-  }
-}
-@media(min-width: 650px){
-  .category-text{
-    font-size: 1.2em;
-  }
-}
-
-.paragraph-text{
-  text-align: left;
-}
-
-.paragraph-text p{
-  margin: 0;
-}
-
-#goodbye h5{
-  font-size: 1.2em;
-  line-height: .5em;
-}
-
-
-body{
-	font-family: 'Libre Franklin', sans-serif;
-}
-
-
 .typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid black; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
+  overflow: hidden;
+  border-right: .15em solid #1a1a1a;
+  white-space: nowrap;
   animation-duration: 3s;
   animation:
-    typing 1s steps(29, end),
+    typing 2s steps(29, end),
     blink-caret .5s step-end infinite;
 }
 
-/* The typing effect */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: #b22929 }
 }
 
 .intro-typing-txt {
-  /*font-family: monospace;*/
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  letter-spacing: .15em; /* Adjust as needed */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-}
-
-#second-intro-typing-txt{
-	text-indent: -9999px;
+  overflow: hidden;
+  letter-spacing: .12em;
+  white-space: nowrap;
+  margin: 0 auto;
 }
 
 
-.welcome{
+.welcome {
   position: relative;
 }
 
-#ny-photo{
+/* --- Category Labels --- */
+.category-text {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 0.75em;
+  text-align: left;
+  font-weight: 700;
+  color: #b22929;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 550px) {
+  .category-text {
+    font-size: 0.75em;
+    text-align: right;
+  }
+}
+
+@media (min-width: 650px) {
+  .category-text {
+    font-size: 0.8em;
+  }
+}
+
+/* --- Paragraph Text --- */
+.paragraph-text {
+  text-align: left;
+  line-height: 1.7;
+}
+
+.paragraph-text p {
+  margin: 0;
+}
+
+/* --- Goodbye --- */
+#goodbye h5 {
+  font-size: 1.2em;
+  line-height: .5em;
+}
+
+#goodbye {
+  position: relative;
+  top: -40px;
+}
+
+/* --- Parallax Photo --- */
+#ny-photo {
   background-image: url(../_img/tmb_hiking.jpg);
 }
 
-#ny-text{
+#ny-text {
   padding-bottom: 0px;
   position: relative;
   bottom: 0px;
 }
 
-#goodbye{
-  
-  position: relative;
-  top: -40px;
-}
-
 .parallax {
-
-    /* Full height */
-     height: 100vh; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: inset 0 0 .1em #111;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 .1em #111;
 }
 
-.experience-title{
-  font-weight: 800;
-}
-.experience-subtitle{
-  color: grey;
-  font-weight: 800;
-}
-.experience-date{
-  text-align: left;
-  color: grey;
-  font-style: italic;
-}
-@media (min-width: 600px) {
-  .experience-date{
-    text-align: right;
+@media (max-width: 800px) {
+  #ny-text {
+    display: none;
   }
-
-  
-}
-.experience-description{
-  font-size: .9em;
+  #ny-photo {
+    display: none;
+  }
 }
 
+/* --- Experience --- */
+.experience-company {
+  font-weight: 800;
+  font-size: 1.2em;
+  color: #1a1a1a;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.02em;
+}
+
+.experience-tenure {
+  color: #888;
+  font-style: italic;
+  font-size: 0.85em;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.experience-title {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.experience-role {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 0.15rem;
+}
+
+.experience-subtitle {
+  color: #555;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.experience-date {
+  text-align: right;
+  color: #888;
+  font-style: italic;
+  font-size: 0.85em;
+}
+
+.experience-description {
+  font-size: 0.9em;
+  line-height: 1.65;
+}
+
+@media (min-width: 550px) {
+  .experience-description {
+    padding-top: 1rem;
+  }
+}
+
+/* --- Skills --- */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
+  gap: 0.5rem;
 }
 
 .skill-tag {
   display: inline-block;
-  padding: 0.4rem 1rem;
-  border: 1.5px solid #b22929;
+  padding: 0.4rem 0.9rem;
+  background: rgba(178, 41, 41, 0.06);
+  border: 1.5px solid rgba(178, 41, 41, 0.25);
   border-radius: 3px;
-  font-size: 0.85em;
+  font-size: 0.8em;
   color: #333;
   font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+  background: rgba(178, 41, 41, 0.12);
+  border-color: rgba(178, 41, 41, 0.5);
 }
 
 .tech-description {
@@ -265,15 +328,10 @@ body{
   font-size: 0.9em;
   color: #555;
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
-@media (min-width: 550px){
-  .experience-description{
-    padding-top: 1rem;
-  }  
-}
-
+/* --- Lists --- */
 ul {
   list-style: none;
   margin-left: 0;
@@ -284,81 +342,79 @@ ul {
 li {
   padding-left: 1.4em;
   text-indent: -1.4em;
+  line-height: 1.65;
+  margin-bottom: 0.3em;
 }
 
 li:before {
-  content: ">>";
+  content: "\203A\203A";
   padding-right: 5px;
+  color: #b22929;
+  font-weight: 700;
 }
 
-a, .center-link{
+/* --- Links --- */
+a, .center-link {
   text-align: center;
-  color:  #b22929;
+  color: #b22929;
   text-decoration: none;
-
-}
-a:hover{
-  color: grey;
+  transition: color 0.2s ease;
 }
 
-
-
-@media(max-width: 800px){
-  #ny-text{
-    display: none;
-
-  }
-  #ny-photo{
-    display: none;
-  }
+a:hover {
+  color: #888;
 }
 
-
+/* --- Arrow --- */
 #arrowVertDiv {
-    height: 30vh;
-    opacity: 0;
-    
+  height: 30vh;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+#arrowVertDiv.show {
+  opacity: 1;
 }
 
 @keyframes bouncing {
-    0% {bottom: 0;}
-    50% {bottom: 20px;}
-    100% {bottom: 0;}
+  0% { bottom: 0; }
+  50% { bottom: 20px; }
+  100% { bottom: 0; }
 }
 
 .arrow {
-    animation: bouncing 1s infinite ease-in-out;
-    bottom: 0;
-    display: block;
-    height: 50px;
-    left: 50%;
-    margin-left: -25px;
-    position: absolute;
-    width: 50px;
+  animation: bouncing 1s infinite ease-in-out;
+  bottom: 0;
+  display: block;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px;
 }
 
+/* --- Lightbox --- */
 .lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .lightbox.active {
-    display: flex;
+  display: flex;
 }
 
 .lightbox img {
-    max-width: 90vw;
-    max-height: 85vh;
-    border-radius: 4px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
-
