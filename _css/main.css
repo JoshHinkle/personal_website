@@ -299,6 +299,20 @@ h4 a:hover {
   }
 }
 
+/* --- Awards (compact) --- */
+#awards .experience-title {
+  margin-bottom: 0.2rem;
+}
+
+#awards .experience-description {
+  padding-top: 0;
+  margin-bottom: 1.4rem;
+}
+
+#awards li {
+  margin-bottom: 0;
+}
+
 /* --- Skills --- */
 .skills-grid {
   display: flex;
@@ -340,15 +354,16 @@ ul {
 }
 
 li {
+  position: relative;
   padding-left: 1.4em;
-  text-indent: -1.4em;
   line-height: 1.65;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.75em;
 }
 
 li:before {
   content: "\203A\203A";
-  padding-right: 5px;
+  position: absolute;
+  left: 0;
   color: #b22929;
   font-weight: 700;
 }
