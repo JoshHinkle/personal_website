@@ -104,14 +104,30 @@ h1 {
   letter-spacing: -0.01em;
 }
 
-h4 a {
+h4 a,
+.welcome-title a {
   color: #b22929;
   border-bottom: 1px solid rgba(178, 41, 41, 0.3);
   transition: border-color 0.2s ease;
 }
 
-h4 a:hover {
+h4 a:hover,
+.welcome-title a:hover {
   border-color: rgba(178, 41, 41, 0.8);
+}
+
+/* Name heading: an h1 for search engines, sized like the h4 it replaced */
+.welcome-title {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -.08rem;
+  font-weight: 800;
+}
+
+@media (min-width: 550px) {
+  .welcome-title {
+    font-size: 3.0rem;
+  }
 }
 
 /* --- Splash / Typewriter --- */
