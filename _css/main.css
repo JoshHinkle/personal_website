@@ -3,6 +3,39 @@
    Cormorant Garamond (headings) + DM Sans (body)
    ============================================ */
 
+/* --- Fonts (self-hosted Libre Franklin) --- */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../_fonts/libre-franklin-latin-400.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../_fonts/libre-franklin-latin-600.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../_fonts/libre-franklin-latin-700.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../_fonts/libre-franklin-latin-800.woff2) format('woff2');
+}
+
 /* --- Base --- */
 body {
   font-family: 'Libre Franklin', sans-serif;
@@ -233,7 +266,12 @@ h4 a:hover,
 }
 
 /* --- Parallax Photo --- */
+/* Photo is below the fold; javascript.js adds .loaded after page load */
 #ny-photo {
+  background-color: #d9d4cc;
+}
+
+#ny-photo.loaded {
   background-image: url(../_img/tmb_hiking.jpg);
 }
 

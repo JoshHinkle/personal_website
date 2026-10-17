@@ -71,13 +71,35 @@
   var lightbox = document.getElementById('daisy-lightbox');
 
   if (daisyLink && lightbox) {
+    // Daisy's photo only downloads once someone hovers or clicks the link
+    var daisyImg = lightbox.querySelector('img');
+    var loadDaisy = function() {
+      if (daisyImg && !daisyImg.getAttribute('src')) {
+        daisyImg.src = daisyImg.getAttribute('data-src');
+      }
+    };
+    daisyLink.addEventListener('mouseenter', loadDaisy);
+    daisyLink.addEventListener('touchstart', loadDaisy, { passive: true });
     daisyLink.addEventListener('click', function(e) {
       e.preventDefault();
+      loadDaisy();
       lightbox.classList.add('active');
     });
     lightbox.addEventListener('click', function() {
       lightbox.classList.remove('active');
     });
+  }
+
+  // --- Deferred parallax photo ---
+  // Below the fold, so start downloading it only after the page has loaded
+  var parallaxPhoto = document.getElementById('ny-photo');
+  if (parallaxPhoto) {
+    var loadParallax = function() { parallaxPhoto.classList.add('loaded'); };
+    if (document.readyState === 'complete') {
+      loadParallax();
+    } else {
+      window.addEventListener('load', loadParallax);
+    }
   }
 
   // --- Scroll reveal (IntersectionObserver) ---
